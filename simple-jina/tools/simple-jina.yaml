@@ -1,0 +1,30 @@
+identity:
+  name: simple-jina
+  author: verysmallwoods
+  label:
+    en_US: simple-jina
+    zh_Hans: simple-jina
+    pt_BR: simple-jina
+description:
+  human:
+    en_US: Convert a web page into well structured Markdown
+    zh_Hans: Convert a web page into well structured Markdown
+    pt_BR: Convert a web page into well structured Markdown
+  llm: Convert a web page into well structured Markdown
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: URL
+      zh_Hans: URL
+      pt_BR: URL
+    human_description:
+      en_US: The URL of a web page to convert
+      zh_Hans: The URL of a web page to convert
+      pt_BR: The URL of a web page to convert
+    llm_description: The URL of a web page to convert
+    form: llm
+extra:
+  python:
+    source: tools/simple-jina.py

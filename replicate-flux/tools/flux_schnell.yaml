@@ -1,0 +1,29 @@
+description:
+  human:
+    en_US: Generate images using the Flux Schnell model
+    zh_Hans: 使用 Flux Schnell 模型生成图像
+  llm: A tool for generating images. Input should be a prompt describing the image you want to generate, such as "black forest gateau cake spelling out the words FLUX SCHNELL, tasty, food photography, dynamic shot"
+
+identity:
+  name: flux_schnell
+  author: VerySmallWoods
+  label:
+    en_US: Flux Schnell
+    zh_Hans: Flux Schnell
+
+parameters:
+  - name: prompt
+    type: string
+    required: true
+    label:
+      en_US: Image Prompt
+      zh_Hans: 图像提示词
+    human_description:
+      en_US: Describe the image you want to generate
+      zh_Hans: 描述你想要生成的图像
+    llm_description: A detailed description of the image you want to generate.
+    form: llm
+
+extra:
+  python:
+    source: tools/flux_schnell.py 
